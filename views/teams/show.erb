@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <%= erb(:'partials/navigation', :layout => false)%>
+
+    <h1>Team ID <%=@team[:id]%></h1>
+    <h1>Name of Team <%=@team[:name]%></h1>
+    <h1>Teams Kit Color <%=@team[:kit_color]%></h1>
+    <h1>Fans Nickname <%=@team[:nickname]%></h1>
+    <h1>Location of Team <%=@team[:location]%></h1>
+
+  </body>
+</html>

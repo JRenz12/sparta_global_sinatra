@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%=@title%></title>
+  </head>
+  <body>
+    <h1><b>This is my Homepage</b></h1>
+
+    <!-- <%= erb(:'partials/navigation', :layout => false)%> -->
+        <%@teams.each do |team|%> <!-- TEAMS IS AN ARRAY OF HASHES, TEAM IS THE INDIVIDUAL HASH-->
+          <h2>Click here for information on photo
+            <a href="/teams/<%=team[:id]%>"><%=team[:id]%></a> <!--LINKS TO THE URL NOT THE FOLDERS-->
+          </h2>
+        <%end%> 
+
+  </body>
+</html>
